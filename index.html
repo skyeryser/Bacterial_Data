@@ -7,18 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Belly Button Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://github.com/skyeryser/Bacterial_Data/blob/main/bacteria.png');
-        background-size: cover; background-position: center; color: white">
+      <div class="col-md-12 jumbotron text-center" >
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
+    
     <div class="row">
       <div class="col-md-2">
         <div class="well">
@@ -32,23 +34,30 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 text-center">
         <div id="bar"></div>
+        <p>The graph above shows the top 10 cultures found in your sample.</p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 text-center">
         <div id="gauge"></div>
+        <p>The frequency at which you wash your navel could affect the type and number of cultures collected.</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 text-center">
         <div id="bubble"></div>
+        <p>Each bubble represents a different bacterial culture. Some cultures appear more frequently than others. <br> The abundance of different cultures is represented by the size of the bubble.</p>
       </div>
     </div>
   </div>
-
+  <div class="container-fluid" style="background-color: rgb(220,220,220,.5); margin-top: 25px">
+  <footer class="py-3 my-4 text-center"><p class="text-center text-muted">Eloise Ryser 2023</p>
+  <a class="nav-link px-2 text-muted" href="https://github.com/skyeryser/Bacterial_Data">github.com</a>
+  </footer>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="charts.js"></script>
+  <script src="static/js/charts.js"></script>
 
 </body>
 
